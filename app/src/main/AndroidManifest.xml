@@ -1,0 +1,18 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="local.watchbridge">
+    <uses-sdk android:minSdkVersion="32" android:targetSdkVersion="35" />
+    <application
+        android:allowBackup="false"
+        android:label="ChatGPT Watch Bridge"
+        android:theme="@style/Theme.VoiceCommandBridge">
+        <activity
+            android:name=".VoiceCommandBridgeActivity"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.VoiceCommandBridge">
+            <intent-filter>
+                <action android:name="android.intent.action.VOICE_COMMAND" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

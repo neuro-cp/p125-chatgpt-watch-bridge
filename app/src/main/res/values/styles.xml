@@ -1,0 +1,9 @@
+<resources>
+    <string name="accessibility_description">Starts ChatGPT Voice only after a watch bridge request.</string>
+    <style name="Theme.VoiceCommandBridge" parent="android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorAccent">@android:color/transparent</item>
+    </style>
+</resources>

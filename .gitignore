@@ -1,0 +1,17 @@
+# Android build products
+build/
+app/build/
+*.apk
+
+# Local signing credentials
+*.keystore
+*.jks
+
+# Android Studio and local SDK state
+.gradle/
+.idea/
+local.properties
+
+# Local captures and temporary files
+captures/
+*.log
