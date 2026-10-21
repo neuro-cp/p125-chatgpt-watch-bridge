@@ -34,3 +34,9 @@ build.ps1                    Local manual APK build helper
 ## Status
 
 Proof of concept complete for the Bluetooth-to-Android handoff. Automatic in-app ChatGPT Voice launch remains unresolved without a supported ChatGPT intent.
+
+## Current hands-free workflow
+
+The presently verified flow is: **Da Fit watch trigger → “Hey Google” → “start accessibility” → “open ChatGPT” → “show grid” → “tap 36” → “Hey Chat.”**
+
+Voice Access can perform the spoken grid and tap steps after it is active. Fully chaining that sequence from the watch is not currently supported by a public ChatGPT “start Voice” action, and this project deliberately does not use synthetic taps or screen-coordinate injection. The practical next step is to configure Voice Access activation and commands so the remaining steps are spoken rather than manually tapped.
